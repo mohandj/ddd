@@ -1,0 +1,18 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+  <record model="ir.rule" id="marques_record_rule">
+        <field name="name">crer une marques</field>
+        <field name="model_id" ref="modéle.devoir2"/>
+
+        <field name="groups" eval="[(4, ref('base.group_user'))]"/>
+    </record>
+
+     <record model="ir.rule" id="marques1_record_rule">
+        <field name="name">ne pas créer </field>
+        <field name="model_id" ref="modéle.devoir2"/>
+        <field name="groups" eval="[(4, ref('base.group_userx'))]"/>
+    </record>
+    </odoo>
